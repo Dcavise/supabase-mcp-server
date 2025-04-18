@@ -9,7 +9,6 @@ RUN pip install --no-cache-dir pipx && \
     pipx ensurepath && \
     pipx install supabase-mcp-server
 
-# ✅ Add this line
 ENV PATH="/root/.local/bin:$PATH"
 
-CMD ["supabase-mcp-server"]
+CMD ["supabase-mcp-server", "--host", "0.0.0.0", "--port", "${PORT}"]
