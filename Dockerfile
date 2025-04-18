@@ -10,4 +10,5 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --no-cache-dir pipx && \
     pipx install supabase-mcp-server
 
-CMD ["/root/.local/bin/supabase-mcp-server", "--host", "0.0.0.0", "--port", "10000"]
+    CMD ["/root/.local/bin/supabase-mcp-server", "--host", "0.0.0.0", "--port", "10000"]
+

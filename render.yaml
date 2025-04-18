@@ -4,4 +4,4 @@ services:
     env: docker
     dockerfilePath: Dockerfile
     ports:
-      - ${PORT}
+      - 10000
