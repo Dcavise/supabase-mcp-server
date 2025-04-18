@@ -1,5 +1,8 @@
 FROM python:3.12-slim-bookworm
 
+EXPOSE 8080
+
+
 WORKDIR /app
 
 # Prepare the basic dependencies
